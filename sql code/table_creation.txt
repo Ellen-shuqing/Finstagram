@@ -1,4 +1,4 @@
-﻿CREATE TABLE Person(
+CREATE TABLE Person(
     username VARCHAR(20), 
     password CHAR(64), 
     firstName VARCHAR(20),
@@ -54,6 +54,7 @@ CREATE TABLE Tagged (
 );              
 
 
+#need modification
 CREATE TABLE SharedWith ( 
     groupOwner VARCHAR(20), 
     groupName VARCHAR(20), 
@@ -62,6 +63,7 @@ CREATE TABLE SharedWith (
     FOREIGN KEY(groupOwner, groupName) REFERENCES Friendgroup(groupOwner, groupName), 
     FOREIGN KEY (photoID) REFERENCES Photo(photoID)
 );
+
 
 
 CREATE TABLE BelongTo (
